@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Переключатель темы и шрифта</title>
+    
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <h1> Настройки</h1>
+        
+        <!-- Выбор темы -->
+        <div class="settings-group">
+            <h2>Тема</h2>
+            <div class="options">
+                <button class="theme-btn" data-theme="light"> Светлая</button>
+                <button class="theme-btn" data-theme="dark"> Тёмная</button>
+                <button class="theme-btn" data-theme="neon"> Неоновая</button>
+            </div>
+        </div>
+
+        <!-- Выбор шрифта -->
+        <div class="settings-group">
+            <h2>Шрифт</h2>
+            <div class="options">
+                <button class="font-btn" data-font="sans"> Sans-Serif</button>
+                <button class="font-btn" data-font="serif"> Serif</button>
+                <button class="font-btn" data-font="mono"> Monospace</button>
+            </div>
+        </div>
+
+        <!-- Пример текста -->
+        <div class="preview">
+            <h3> Пример текста</h3>
+            <p id="previewText">
+                Живой пример текста для демонстрации выбранной темы и шрифта.
+                Вы можете видеть изменения в реальном времени.
+            </p>
+        </div>
+
+        <!-- Текущие настройки -->
+        <div class="current-settings">
+            <p>Текущая тема: <span id="currentTheme">Светлая</span></p>
+            <p>Текущий шрифт: <span id="currentFont">Sans-Serif</span></p>
+        </div>
+    </div>
+
+    <!-- Подключаем JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
